@@ -1,0 +1,198 @@
+body {
+	overflow-x: hidden;
+}
+
+.zh_comm {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	position: fixed;
+	z-index: 9999;
+	right: -160px;
+	width: 151px;
+	transition-duration: 0.3s;
+	border: 1px solid #555;
+	padding: 0;
+	margin: 0;
+	background: #606060;
+	height: 100%;
+}
+
+.zh_com {
+	right: 0px;
+}
+
+#zh_tooltip {
+	z-index: 9998;
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 0px;
+	width: auto;
+	background-color: #fff;
+	padding: 5px 10px 5px 10px;
+	color: #000;
+	border: 1px dotted #888;
+	border-radius: 5px; 
+	box-shadow: 0 1px 2px #555;
+	box-sizing: ;
+}
+
+#zh_head_1, #zh_head_2 {
+	background: #606060;
+	color: #fff;
+	font-size: 14px;
+	width: 80px;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	border: 0px;
+}
+
+#zh_head_2 {
+	width: 68px;
+}
+
+.zh_but {
+	right: -25px;
+}
+
+.zh_butt, .zh_but, .zh_no, .zh_Allok, .zh_CSSok {
+	width: 90px;
+	height:25px;
+	position: relative;
+	display: inline-block;
+	font-size: 90%;
+	font-weight: 400;
+	color: rgb(209,209,217);
+	text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+	text-align: baseline;
+	padding: 0px;
+	margin: 3px;
+	outline: none;
+	border-radius: 3px;
+	background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+	box-shadow:
+		0 1px rgba(255,255,255,.2) inset,
+		0 3px 5px rgba(0,1,6,.5),
+		0 0 1px 1px rgba(0,1,6,.2);
+	transition: .2s ease-in-out;
+	text-decoration: none;
+	float: both;
+}
+.zh_but:hover:not(:active), .zh_no:hover:not(:active), .zh_Allok:hover:not(:active) .zh_CSSok:hover:not(:active) {
+	background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+	text-decoration: none;
+}
+.zh_but:active, .zh_no:active, .zh_Allok:active .zh_CSSok:active {
+	top: 1px;
+	background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+	box-shadow:
+		0 0 1px rgba(0,0,0,.5) inset,
+		0 2px 3px rgba(0,0,0,.5) inset,
+		0 1px 1px rgba(255,255,255,.1);
+	text-decoration: none;
+}
+
+#zh_Allreset {
+	margin: 10px 3px 3px 3px;
+}
+
+.zh_but {
+	vertical-align: baseline;
+}
+.zh_fix {
+	top: 1px;
+	background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+	box-shadow:
+		0 0 1px rgba(0,0,0,.5) inset,
+		0 2px 3px rgba(0,0,0,.5) inset,
+		0 1px 1px rgba(255,255,255,.1);
+	text-decoration: none;
+}
+
+.zh_bgr, .zh_col, .zh_prob {
+	font-size: inherit;
+	width: 62px;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	border: 0px;
+
+}
+
+.zh_prob {
+    cursor: pointer;
+	width: 25px;
+}
+
+#zh_cont {
+	position: fixed;
+	display: none;
+	z-index: 10000;
+}
+
+/* M O D A L */
+#zh_modal_form, #zh_modal_formm {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:  #00FF00;
+	text-align: center;
+    width: 450px; 
+    height: 100px;
+    border-radius: 5px;
+	border: 1px solid #555;
+	background: #606060;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+ 
+#zh_modal_form #zh_modal_close, #zh_modal_formm #zh_modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+ 
+#zh_overlay, #zh_overlayy {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.zh_no {
+  float: right;
+  	padding: 0px 30px 0px 30px;
+	text-align:center;
+	width: 70px;
+}
+
+.zh_Allok, .zh_CSSok {
+  float: left;
+  	padding: 0px 30px 0px 30px;
+	text-align:center;
+	width: 70px;
+}
+
+/* end M O D A L */
